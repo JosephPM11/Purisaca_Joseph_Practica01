@@ -11,7 +11,7 @@ public class App {
         System.out.println("--INGRESAR DATOS DE LA TARJETA 1--");
         //Datos Tarjeta1
         System.out.println("Ingresa el numero de tarjeta: ");
-        int tarjeta = scanner.nextInt();
+        int numero = scanner.nextInt();
         System.out.println("Ingresa el saldo: ");
         float saldo = scanner.nextFloat();
         System.out.println("Ingresa activo (T/F): ");
@@ -34,12 +34,8 @@ public class App {
         System.out.println("Ingresa el tipo de documento: ");
         String tipoDocumento = scanner.nextLine();
         
-        
-        Tarjeta tarjeta1 = new Tarjeta(tarjeta,saldo,activo,precio);
+        Tarjeta tarjeta1 = new Tarjeta(numero,saldo,activo,precio);
         Usuario usuario1 = new Usuario(paterno,materno,nombres,documento,tipoDocumento);
-        
-       
-        
     }
     
 }
